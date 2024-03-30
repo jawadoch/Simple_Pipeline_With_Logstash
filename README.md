@@ -21,9 +21,9 @@ This Logstash pipeline is designed to ingest JSON documents from a file and inde
 2. **Filter**:Parses the JSON content from the message field, Removes unnecessary fields such as @version, @timestamp, host, log, and event and Prepares the documents for indexing.
 3. **Output**: Sends the processed documents to Elasticsearch for indexing and Specifies the Elasticsearch index name (testdb) where the documents will be indexed
 ### Requirements
-Logstash installed and configured.
-Elasticsearch running and accessible at http://localhost:9200.
-Input JSON documents formatted correctly and placed in the specified file path.
+1. Logstash installed and configured.
+2. Elasticsearch running and accessible at http://localhost:9200.
+3. Input JSON documents formatted correctly and placed in the specified file path.
 ### Contributors
 [Jawadoch]
 
